@@ -9,6 +9,15 @@ package poogroupproject;
  *
  * @author asoriano
  */
-public class Persona {
+public abstract class Persona {
+    
+    protected int edad;
+    protected String nombre;
+    protected String sexo;
+    
+    
+    protected Persona(){
+        
+    }
     
 }
