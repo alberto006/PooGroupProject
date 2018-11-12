@@ -5,23 +5,22 @@
 package poogroupproject;
 
 public class Deportista extends Persona{
-    
+    //Metodo principal para la clase Persona
     public Deportista(int edad,String nombre,String id, String sexo){
         super(edad,nombre,id,sexo);
     }
-    //disciplina indica el deporte que practica el deporstista
-    public String disciplina;
-    //la caterogria indica si es principiante, experimentado o profesional
-    public String categoria;
-    //el ranking le data un lugar en la tabla de posiciones en comparacion de los atletas competidores
-    public int ranking;
+    //Atributos de la clase Deportista
+    private String disciplina;    
+    private String categoria;    
+    private int ranking;
     
+    //Constructos de la clase deportista
     public void infoDeportista(String disciplina,String categoria,int ranking){
         this.disciplina=disciplina;
         this.categoria=categoria;
         this.ranking=ranking;
     }
-    
+    //Metodos de acceso a las variables
     public String getDisciplina(){
         return this.disciplina;
     }
@@ -40,6 +39,7 @@ public class Deportista extends Persona{
     public void setRanking(int ranking){
         this.ranking=ranking;
     }
+    //Metodo de impresion para informacion de la clase deportista
     public void infoDeportista(){
         System.out.println("Disciplina: "+disciplina);
         System.out.println("Categoria: "+categoria);

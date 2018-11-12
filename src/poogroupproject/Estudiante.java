@@ -39,7 +39,7 @@ public class Estudiante extends Persona{
         public void setIndice(double indice){
             this.indice=indice;
         }
-        
+        //Metodo para inprimir la informacion del estudiante
         public void infoEstudiante(){
             System.out.println("Carrera: "+this.carrera);
             System.out.println("Indice: "+this.indice);
