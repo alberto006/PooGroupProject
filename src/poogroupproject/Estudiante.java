@@ -10,25 +10,29 @@ package poogroupproject;
  */
 public class Estudiante extends Persona{   
      
+        //Metodo que contiene las propiedades de la clase persona.
         public Estudiante(int edad,String nombre, String id,String sexo){
             super(edad,nombre,id,sexo);
         }
         
-        public String carrera;
-        public double indice;      
+        //atributos propios de la clase estudiante (mantenerlos privados por seguridad)
+        private String carrera;
+        private double indice;      
         
+        //Constructor de la clase Estudiante
         public void Estudiante(String carrera, double indice){
             this.carrera=carrera;
             this.indice=indice;
         }
         
+        //Metodos de acceso a la variable carrera
         public String getCarrera(){
             return this.carrera;
         }
         public void setCarrera(String carrera){
             this.carrera=carrera;
         }
-        
+        //Metodos de acceso a la variable indice
         public double getIndice(){
             return this.indice;
         }
