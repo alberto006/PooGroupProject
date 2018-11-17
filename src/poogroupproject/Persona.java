@@ -1,3 +1,4 @@
+//hola
 package poogroupproject;
 
 public abstract class Persona {
